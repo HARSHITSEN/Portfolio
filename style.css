@@ -485,3 +485,88 @@ filter: brightness(.8);
     padding: 10px;
     font-family: 'Croissant One', cursive;
   }
+
+
+
+/* Education */
+  :root {
+    --black: #000;
+    --gray: #ccc;
+}
+
+.o-page {
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+.o-main-section {
+    margin: 0 auto;
+}
+
+
+
+.c-main-menu__link {
+    color: var(--black);
+    display: inline-block;
+    font-size: 0.875rem;
+    letter-spacing: 0.25rem;
+    margin: 0 0.375rem;
+    padding: 0.625rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Articles */
+.c-article__link {
+    align-items: center;
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    text-decoration: none;
+}
+
+.c-article__heading {
+    font-size: 1.25rem;
+    margin: 0.625rem 0;
+    font-family: 'Cinzel', serif;
+}
+
+.c-article__content {
+    line-height: 1.5;
+    margin: 0.625rem 0;
+    font-family: 'Play', sans-serif;
+}
+
+.c-article__link:hover .c-article__img {
+    filter: grayscale(0);
+}
+
+/* Magic area */
+.c-magic-area {
+    position: absolute;
+    z-index: -1;
+}
+
+.edu{
+    margin: 50px 0;
+}
+.c-magic-area--menu,
+.c-magic-area--content {
+    background-color: burlywood;
+    border-radius: 0.125rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.c-magic-area--content::before {
+    background-color: var(--black);
+    content: "";
+    height: 70%;
+    left: -0.1875rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.375rem;
+}
