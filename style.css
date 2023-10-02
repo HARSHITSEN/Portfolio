@@ -366,34 +366,6 @@ filter: brightness(.8);
 
 
 
-/* media query */
-
-/* tablet */
-@media screen and (max-width:768px){
-    .intro{
-        flex-direction: column;
-    }
-    .image-section, .main-section {
-        width: 100%;
-    }
-    .pi{
-        width: 100%;
-        border-right: none;
-    }
-    .uper{
-        background-color:bisque;
-    }
-    .lower{
-    width: 100%;}
-}
-/* mobile */
-@media (max-width:480px){
-
-    .pi{
-        width: 100%;
-        border-right: none;
-    }
-}
 
 
 
@@ -569,4 +541,34 @@ filter: brightness(.8);
     top: 50%;
     transform: translateY(-50%);
     width: 0.375rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+/* tablet */
+@media screen and (max-width:768px) and (min-width:300px){
+    .intro{
+        flex-direction: column;
+    }
+    .image-section, .main-section {
+        width: 100%;
+    }
+    .pi{
+        width: 100%;
+        border-right: none;
+    }
+    .uper{
+        background-color:bisque;
+    }
+    .lower{
+    width: 100%;}
 }
